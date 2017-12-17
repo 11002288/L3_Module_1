@@ -10,27 +10,28 @@ import org.junit.Test;
 
 public class MoreAndMoreTests {
 
-//	@Test
-//	  public void MultTest() {
+	@Test
+  public void MultTest() {
+	
+		assertEquals("10 x 0 = 0", multiply(10, 0));
+	    assertEquals("10 x 10 = 100", multiply(10, 10));
+	    assertEquals("8 x 11 = 88", multiply(8, 11));
+	    
+ }
 //
-//	    assertEquals("10 x 0 = 0", multiply(10, 0));
-//	    assertEquals("10 x 10 = 100", multiply(10, 10));
-//	    assertEquals("8 x 11 = 88", multiply(8, 11));
-//	  }
-//
-//	@Test
-//	  public void PrimeTest() {
-//
-//	    assertTrue(isPrime(3));
-//	    assertTrue(isPrime(5));
-//	    assertTrue(isPrime(541));
-//	    assertFalse(isPrime(4));
-//	    assertFalse(isPrime(12));
-//	    assertFalse(isPrime(527));
-//
-//	  }
-//
-//	@Test
+	@Test
+  public void PrimeTest() {
+
+    assertTrue(isPrime(3));
+	    assertTrue(isPrime(5));
+	    assertTrue(isPrime(541));
+	    assertFalse(isPrime(4));
+	    assertFalse(isPrime(12));
+	    assertFalse(isPrime(527));
+
+	  }
+////
+///	@Test
 //	  public void SquareTest() {
 //
 //	    assertTrue(isSquare(4));
@@ -56,6 +57,19 @@ public class MoreAndMoreTests {
 //	    assertFalse(isCube(143));
 //
 //	  }
+
+private String multiply(int i, int j) {
+	// TODO Auto-generated method stub
+	String name = "" + i + " x " + j + " = " + i*j;
+	System.out.println("" + name);
+	//10 x 0 = 0
+	return name;
+}
+private boolean isPrime(int x) {
+	
+	return true;
+	
+}
 
 
 
