@@ -38,7 +38,7 @@ public class SearchingAndSortingAlgorithms {
 	}
 
 	/* 4. Create a method that will find the longest word. */
-//	@Test
+	@Test
 	public void testFindMaxiumumString() throws Exception {
 		List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious", "bellwether",
 				"callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant", "cuddlesome", "cupidity", "cynosure",
@@ -52,26 +52,26 @@ public class SearchingAndSortingAlgorithms {
 	 * 5. The Morse code for SOS is "... --- ..."
 	 * Create a method that can tell if SOS is contained in a message.
 	 */
-//	@Test
+	@Test
 	public void testFindString() throws Exception {
-		List<String> message1 = Arrays.asList(".... . .-. .-. --- / ... --- ... / -.-- .- .-.. .-.. ...".split("/"));
+		List<String> message1 = Arrays.asList(".... . .-. .-. ---/... --- .../-.-- .- .-.. .-.. ...".split("/"));
 		assertEquals(true, Algorithms.containsSOS(message1));
 		List<String> message2 = Arrays
-				.asList(".-- .. - .... / - .... . / .-.. .. --. .... - ... / --- ..- - --..-- / .. - .----. ... / .-.. . ... ... / -.. .- -. --. . .-. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .. / ..-. . . .-.. / ... - ..- .--. .. -.. / .- -. -.. / -.-. --- -. - .- --. .. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .- / -- ..- .-.. .- - - --- --..-- / .- -. / .- .-.. -... .. -. --- --..-- / .- / -- --- ... --.- ..- .. - --- --..-- / -- -.-- / .-.. .. -... .. -.. --- / -.-- . .- .... --..-- / .... . -.-- / -.-- . .- ....".split("/"));
+				.asList(".-- .. - .... - .... ./.-.. .. --. .... - .../--- ..- - --..--/.. - .----. .../.-.. . ... .../-.. .- -. --. . .-. --- ..- .../.... . .-. ./.-- ./.- .-. ./-. --- .-- ?/. -. - . .-. - .- .. -./..- .../../..-. . . .-../... - ..- .--. .. -../.- -. -../-.-. --- -. - .- --. .. --- ..- .../.... . .-. ./.-- ./.- .-. ./-. --- .-- ?/. -. - . .-. - .- .. -./..- .../.-/-- ..- .-.. .- - - --- --..--/.- -./.- .-.. -... .. -. --- --..--/.-/-- --- ... --.- ..- .. - --- --..--/-- -.--/.-.. .. -... .. -.. ---/-.-- . .- .... --..--/.... . -.--/-.-- . .- ....".split("/"));
 		assertEquals(false, Algorithms.containsSOS(message2));
 	}
 
 	/* 6. Write a morse code translator to read the messages. Just kidding! */
 
 	/* 7. Sort the exam results from lowest to highest. */
-//	@Test
-//	public void testSort() throws Exception {
-//		List<Double> results = Arrays.asList(new Double[] { 60.3, 60.2, 80.4, 67.2, 95.0, 85.5, 40.7, 68.2, 38.4, 94.2, 85.0, 84.5, 50.1,
-//				66.6 });
-//		assertEquals(38.4, Algorithms.sortScores(results).get(0), 0.0);
-//		assertEquals(40.7, Algorithms.sortScores(results).get(1), 0.0);
-//		assertEquals(95.0, Algorithms.sortScores(results).get(13), 0.0);
-//	}
+	@Test
+	public void testSort() throws Exception {
+		List<Double> results = Arrays.asList(new Double[] { 60.3, 60.2, 80.4, 67.2, 95.0, 85.5, 40.7, 68.2, 38.4, 94.2, 85.0, 84.5, 50.1,
+				66.6 });
+		assertEquals(38.4, Algorithms.sortScores(results).get(0), 0.0);
+		assertEquals(40.7, Algorithms.sortScores(results).get(1), 0.0);
+		assertEquals(95.0, Algorithms.sortScores(results).get(13), 0.0);
+	}
 
 	/* 8. Sort the DNA sequences by length from shortest to longest. */
 //	@Test

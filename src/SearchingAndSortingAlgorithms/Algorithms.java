@@ -20,6 +20,7 @@ public class Algorithms {
 		for (int i = 0; i < oysters.size(); i++) {
 			if (oysters.get(i) == true) {
 				j = j+1;
+				
 			}
 		}
 		return j;
@@ -43,23 +44,38 @@ public class Algorithms {
 		// TODO Auto-generated method stub
 		String m = "";
 		for (int i = 0; i < words.size(); i++) {
-			if (words.get(i).length()>=m.length()) {
+			if (words.get(i).length()>m.length()) {
 				m = words.get(i);
+				
 			}
 		}
 		return m;
 	}
 
-	public static Object containsSOS(List<String> message1) {
+	public static boolean  containsSOS(List<String> message1) {
 		// TODO Auto-generated method stub
 		String o = "... --- ...";
 		for (int i = 0; i < message1.size(); i++) {
 			if (message1.get(i).contains(o)) {
-				System.out.println("test");
+				return true;
 			}
 		}
-		return o;
+		return false;
 	}
+
+	public static List<Double> sortScores(List<Double> results) {
+		// TODO Auto-generated method stub
+		List<Double> z = ;
+		for (int i = 0; i <= results.size(); i++) {
+			if (results.get(i)<=z) {
+				z = results.get(i);
+			}
+		}
+		return z;
+	}
+
+	
+	
 
 	//Add other methods here
 }
