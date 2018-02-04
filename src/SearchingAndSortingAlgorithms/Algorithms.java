@@ -20,7 +20,7 @@ public class Algorithms {
 		for (int i = 0; i < oysters.size(); i++) {
 			if (oysters.get(i) == true) {
 				j = j+1;
-				
+
 			}
 		}
 		return j;
@@ -46,7 +46,7 @@ public class Algorithms {
 		for (int i = 0; i < words.size(); i++) {
 			if (words.get(i).length()>m.length()) {
 				m = words.get(i);
-				
+
 			}
 		}
 		return m;
@@ -65,17 +65,51 @@ public class Algorithms {
 
 	public static List<Double> sortScores(List<Double> results) {
 		// TODO Auto-generated method stub
-		List<Double> z = ;
-		for (int i = 0; i <= results.size(); i++) {
-			if (results.get(i)<=z) {
-				z = results.get(i);
+		for (int j = 0; j < results.size(); j++) {
+
+
+			for (int i = 0; i < results.size()-1; i++) {
+				Double x = results.get(i);
+				Double y = results.get(i+1);
+				Double z = x;
+				if (x > y) {
+					x=y;
+					y=z;
+
+					results.set(i, x);
+					results.set(i+1, y);
+				}
 			}
 		}
-		return z;
+
+		return results;
 	}
 
+	public static List<String> sortDNA(List<String> unsortedSequences) {
+		// TODO Auto-generated method stub
+		for (int j = 0; j < unsortedSequences.size(); j++) {
+			
 	
-	
+		for (int i = 0; i < unsortedSequences.size()-1; i++) {
+			String x = unsortedSequences.get(i);
+			String y = unsortedSequences.get(i+1);
+			String z = x;
+			if (x.length() > y.length()) {
+				x=y;
+				y=z;
+
+				unsortedSequences.set(i, x);
+				unsortedSequences.set(i+1, y);
+
+			}
+		}}
+
+
+		return unsortedSequences;
+	}
+
+
+
 
 	//Add other methods here
 }
