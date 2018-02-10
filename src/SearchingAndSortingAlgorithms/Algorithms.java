@@ -106,7 +106,7 @@ public class Algorithms {
 		return unsortedSequences;
 	}
 
-	public static boolean sortWords(List<String> words) {
+	public static List<String> sortWords(List<String> words) {
 		// TODO Auto-generated method stub
 		for (int j = 0; j < words.size(); j++) {
 			
@@ -114,12 +114,12 @@ public class Algorithms {
 		for (int i = 0; i < words.size()-1; i++) {
 		String x = words.get(i);
 		String y = words.get(i+1);
-		if (x.equals(y)) {
+		if (x.compareTo(y)) {
 			
 		}
 		}
 		
-		return true;
+		return null;
 	}
 
 	// Add other methods here
