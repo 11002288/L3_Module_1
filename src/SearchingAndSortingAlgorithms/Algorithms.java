@@ -110,16 +110,21 @@ public class Algorithms {
 		// TODO Auto-generated method stub
 		for (int j = 0; j < words.size(); j++) {
 			
-		}
+		
 		for (int i = 0; i < words.size()-1; i++) {
 		String x = words.get(i);
 		String y = words.get(i+1);
-		if (x.compareTo(y)) {
-			
-		}
-		}
+		String z = x;
+		if (x.compareTo(y)>=0) {
+		x = y;
+		y=z;
 		
-		return null;
+		words.set(i, x);
+		words.set(i + 1, y);
+		}
+		}}
+		System.out.println(words);
+		return words;
 	}
 
 	// Add other methods here
